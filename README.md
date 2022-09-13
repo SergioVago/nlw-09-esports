@@ -12,8 +12,6 @@ Apenas aulas de configurações de ambiente de desenvolvimento e configurações
 ### Fizemos o início da estilização da interface web 
 <image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day02web.png?raw=true" alt="day 02 print web" style="height: 400px;" />
 
-<br />
-
 ### E o início da estilização da interface mobile
 
 <image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day02mobile.jpg?raw=true" alt="day 02 print mobile" style="height: 400px;" />
