@@ -15,3 +15,8 @@ Apenas aulas de configurações de ambiente de desenvolvimento e configurações
 ### E o início da estilização da interface mobile
 
 <image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day02mobile.jpg?raw=true" alt="day 02 print mobile" style="height: 400px;" />
+
+<br />
+
+## Dia  03
+Finalizamos o backend da aplicação, que foi escrito utilizando o prisma como ORM e o SQLite como database
