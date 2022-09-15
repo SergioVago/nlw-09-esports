@@ -26,7 +26,7 @@ Finalizamos o backend da aplicação, que foi escrito utilizando o prisma como O
 ### Integramos o app web e o mobile com o nosso backend
 
 ### No front web fizemos também a estilização do modal de criação de anúncio
-<image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day04web.png?raw=true" alt="day 04 print web" style="height: 400px;" />
+<image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day04web.PNG?raw=true" alt="day 04 print web" style="height: 400px;" />
 
 ### E no mobile fizemos a exibição de anúncios de um game
 <image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day04mobile01.jpg?raw=true" alt="day 04 print mobile 01" style="height: 400px;" />
