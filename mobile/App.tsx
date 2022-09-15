@@ -1,4 +1,3 @@
-import { useKeepAwake } from 'expo-keep-awake';
 import { StatusBar } from 'expo-status-bar';
 import {
   useFonts,
@@ -9,11 +8,13 @@ import {
 } from '@expo-google-fonts/inter'
 
 import { Background } from './src/components/Background';
-import { Home } from './src/screens/Home';
 import { Loading } from './src/components/Loading';
+import { Routes } from './src/routes';
+import { useKeepAwake } from 'expo-keep-awake';
 
 export default function App() {
   useKeepAwake();
+
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_600SemiBold,
@@ -23,15 +24,13 @@ export default function App() {
 
   return (
     <Background>
-
       <StatusBar
         style='light'
         backgroundColor='transparent'
         translucent
       />
 
-
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </Background>
   );
 }

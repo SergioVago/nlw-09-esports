@@ -1,35 +1,65 @@
-import { FlatList, Image, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { FlatList, Image } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native'
 
 import logoImg from '../../assets/logo-nlw-esports.png'
-import { GameCard } from '../../components/GameCard';
+import { Background } from '../../components/Background';
+import { Game, GameCard } from '../../components/GameCard';
 import { Heading } from '../../components/Heading';
-import { GAMES } from '../../utils/games';
 
 import { styles } from './styles';
 
 export function Home() {
+  const navigation = useNavigation()
+  const [games, setGames] = useState<Game[]>([])
+
+  useEffect(() => {
+    fetch('http://192.168.100.17:3333/games')
+      .then(response => response.json())
+      .then(data => {
+        setGames(data)
+      })
+  }, [])
+
+  function handleOpenGame(game: Game) {
+    const { id, title, bannerUrl } = game
+
+    navigation.navigate('game', {
+      id,
+      title,
+      bannerUrl,
+    })
+  }
+
   return (
-    <View style={styles.container}>
-      <Image
-        source={logoImg}
-        style={styles.logo}
-      />
+    <Background>
+      <SafeAreaView style={styles.container}>
+        <Image
+          source={logoImg}
+          style={styles.logo}
+        />
 
-      <Heading
-        title="Encontre seu duo!"
-        subtitle="Selecione o game que deseja jogar..."
-      />
+        <Heading
+          title="Encontre seu duo!"
+          subtitle="Selecione o game que deseja jogar..."
+        />
 
-      <FlatList
-        contentContainerStyle={styles.contentList}
-        data={GAMES}
-        keyExtractor={item => item.id}
-        renderItem={({ item }) => (
-          <GameCard data={item} />
-        )}
-        showsHorizontalScrollIndicator={false}
-        horizontal
-      />
-    </View>
-  );
+
+        <FlatList
+          contentContainerStyle={styles.contentList}
+          data={games}
+          keyExtractor={item => item.id}
+          renderItem={({ item }) => (
+            <GameCard
+              data={item}
+              onPress={() => handleOpenGame(item)}
+            />
+          )}
+          showsHorizontalScrollIndicator={false}
+          horizontal
+        />
+      </SafeAreaView>
+    </Background>
+  )
 }

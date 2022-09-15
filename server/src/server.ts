@@ -55,6 +55,7 @@ app.get('/games/:id/ads', async (request, response) => {
       id: true,
       name: true,
       weekDays: true,
+      yearsPlaying: true,
       useVoiceChanel: true,
       hourEnd: true,
       hourStart: true
