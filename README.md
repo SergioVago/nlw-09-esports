@@ -32,4 +32,21 @@ Finalizamos o backend da aplicação, que foi escrito utilizando o prisma como O
 <image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day04mobile01.jpg?raw=true" alt="day 04 print mobile 01" style="height: 400px;" />
 <image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day04mobile02.jpg?raw=true" alt="day 04 print mobile 02" style="height: 400px;" />
 
+<br />
 
+
+## Dia 05
+### No front web fizemos o modal de publicação de um anúncio funcional
+<image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day05web.png?raw=true" alt="day 05 print web" style="height: 400px;" />
+
+### E no mobile fizemos o modal de conexão
+<image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day05mobile01.jpg?raw=true" alt="day 05 print mobile 01" style="height: 400px;" />
+
+### E configuramos as push notifications
+<image src="https://github.com/SergioVago/nlw-09-esports/blob/main/readme_assets/day05mobile02.jpg?raw=true" alt="day 05 print mobile 02" style="height: 400px;" />
+
+
+<br />
+<hr />
+
+# E assim finalizamos o projeto
